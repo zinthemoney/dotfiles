@@ -1,2 +1,6 @@
 !bin
 vim/bundle/
+
+# Mac and Swap 
+._DS_store
+*~

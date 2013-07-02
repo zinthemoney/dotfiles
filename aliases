@@ -6,6 +6,7 @@ alias ...='../..'
 alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
+alias rmf='rm -rf'
 alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
@@ -13,8 +14,11 @@ alias -g ONE="| awk '{ print \$1}'"
 alias e="$EDITOR"
 alias v="$VISUAL"
 
+# vim
+alias vi='vim'
+
 # git
-alias gci="git pull --rebase && rake && git push"
+alias st="git status"
 
 # Bundler
 alias b="bundle"

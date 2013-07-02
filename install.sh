@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Remove the bundle folder before installing
+rm -rf ~/.vim/bundle
+
 cutstring="DO NOT EDIT BELOW THIS LINE"
 
 for name in *; do
