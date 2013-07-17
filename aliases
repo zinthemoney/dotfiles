@@ -17,8 +17,12 @@ alias v="$VISUAL"
 # vim
 alias vi='vim'
 
+# Sublime Text
+alias sub='subl'
+
 # git
 alias st="git status"
+alias gcm="git commit -m"
 
 # Bundler
 alias b="bundle"
