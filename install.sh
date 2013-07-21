@@ -1,7 +1,13 @@
 #!/bin/sh
 
+# define home directory
+target="$HOME/.$name"
+
 # Remove the bundle folder before installing
-rm -rf ~/.vim/bundle
+if [ -e "$target/.vim/bundle" ]; then
+  rm -rf $target/.vim/bundle
+  echo "deleting .vim/bundle before installing."
+fi
 
 cutstring="DO NOT EDIT BELOW THIS LINE"
 
