@@ -2,6 +2,7 @@
 let mapleader = " "
 
 set nocompatible " Use Vim settings, rather then Vi settings
+set noerrorbells
 set nobackup
 set nowritebackup
 set noswapfile " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
@@ -68,8 +69,14 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
+" Bind code block formatting like Textmate
+nmap <D-[> <<
+nmap <D-]> >>
+vmap <D-[> <gv
+vmap <D-]> >gv
+
 " Color scheme
-colorscheme evening
+colorscheme blink
 highlight NonText guibg=#060606
 highlight Folded guibg=#0A0A0A guifg=#9090D0
 
