@@ -69,3 +69,8 @@ setopt CORRECT CORRECT_ALL
 # Enable extended globbing
 setopt EXTENDED_GLOB
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+source $HOME/.bash_profile
+source $HOME/.bashrc
