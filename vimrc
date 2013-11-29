@@ -114,6 +114,9 @@ let g:html_indent_tags = 'li\|p'
 set splitbelow
 set splitright
 
+" Allow using sudo inside vim when you forgot to sudo vim <file>
+cmap w!! w !sudo tee > /dev/null %
+
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
