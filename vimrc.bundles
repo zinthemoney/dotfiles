@@ -8,6 +8,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
+Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'godlygeek/tabular'
 Bundle 'croaky/vim-colors-github'
 Bundle 'MarcWeber/vim-addon-mw-utils'
