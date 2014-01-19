@@ -22,6 +22,8 @@
   br = branch
   st = status
   up = !git fetch origin && git rebase origin/master
+  # up for upstream
+  pu = !git fetch upstream && git rebase upstream/master
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
