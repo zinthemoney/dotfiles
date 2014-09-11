@@ -42,3 +42,10 @@ alias m="migrate"
 alias rk="rake"
 alias s="rspec"
 alias z="zeus"
+
+# AWS shortcuts
+alias ssh-geo-staging="ssh -i ~/.ec2/rubber-geo-staging.pem root@ec2-54-226-182-120.compute-1.amazonaws.com"
+alias rubberlogs="RUBBER_ENV=staging cap rubber:tail_logs"
+
+# Print tree-like folder structure
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
